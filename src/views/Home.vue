@@ -5,8 +5,8 @@
     <ul class="block">
       <li>
         <RouterLink
-          to="/accordion"
-          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          :to="{ name: 'accordion' }"
+          class="font-medium text-blue-600 hover:underline"
           >Acordion</RouterLink
         >
       </li>
