@@ -3,17 +3,16 @@ import Flowbite from "flowbite";
 import type { AccordionItem } from "flowbite/src/components/accordion/types";
 import { onMounted } from "vue";
 
-// create an array of objects with the id, trigger element (eg. button), and the content element
-const accordionItems = [
-  {
-    id: "accordion-example-heading-1",
-    triggerEl: document.querySelector("#accordion-example-heading-1"),
-    targetEl: document.querySelector("#accordion-example-body-1"),
-    active: true,
-  },
-] as AccordionItem[];
-
 onMounted(() => {
+  const accordionItems = [
+    {
+      id: "accordion-example-heading-1",
+      triggerEl: document.querySelector("#accordion-example-heading-1"),
+      targetEl: document.querySelector("#accordion-example-body-1"),
+      active: true,
+    },
+  ] as AccordionItem[];
+
   const accordion = new Flowbite.Accordion(accordionItems);
   accordion.open("accordion-example-heading-1");
 });
