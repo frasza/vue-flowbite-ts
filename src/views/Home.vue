@@ -17,6 +17,13 @@
           >Dropdown</RouterLink
         >
       </li>
+      <li>
+        <RouterLink
+          :to="{ name: 'modal' }"
+          class="font-medium text-blue-600 hover:underline"
+          >Modal</RouterLink
+        >
+      </li>
     </ul>
   </nav>
 </template>
