@@ -1,14 +1,13 @@
 <script setup lang="ts">
-import Flowbite from "flowbite";
-import type Modal from "flowbite/src/components/modal";
+import Modal from "flowbite";
 import type { ModalOptions } from "flowbite/src/components/modal/types";
 import { onMounted, ref } from "vue";
 
-let modal: Modal | null;
+let modal: typeof Modal | null;
 const modalEl = ref(null);
 
 onMounted(() => {
-  modal = new Flowbite.Modal(modalEl.value, {
+  modal = new Modal(modalEl.value, {
     placement: "center",
     backdrop: "dynamic",
     backdropClasses:
