@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Modal from "flowbite";
+import { Modal } from "flowbite";
 import type { ModalOptions } from "flowbite/src/components/modal/types";
 import { onMounted, ref } from "vue";
 
