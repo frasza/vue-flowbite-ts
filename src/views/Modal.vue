@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { Modal } from "flowbite";
-import type { ModalOptions } from "flowbite/src/components/modal/types";
+import { Modal } from "flowbite-ts-test";
 import { onMounted, ref } from "vue";
 
-let modal: typeof Modal | null;
+let modal: Modal;
 const modalEl = ref(null);
 
 onMounted(() => {
@@ -12,7 +11,7 @@ onMounted(() => {
     backdrop: "dynamic",
     backdropClasses:
       "bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40",
-  } as ModalOptions);
+  });
 });
 </script>
 

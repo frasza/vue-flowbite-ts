@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import Flowbite from "flowbite";
-import type { AccordionItem } from "flowbite/src/components/accordion/types";
+import { Accordion } from "flowbite-ts-test";
 import { onMounted } from "vue";
 
 onMounted(() => {
@@ -11,9 +10,9 @@ onMounted(() => {
       targetEl: document.querySelector("#accordion-example-body-1"),
       active: true,
     },
-  ] as AccordionItem[];
+  ];
 
-  const accordion = new Flowbite.Accordion(accordionItems);
+  const accordion = new Accordion(accordionItems);
   accordion.open("accordion-example-heading-1");
 });
 </script>

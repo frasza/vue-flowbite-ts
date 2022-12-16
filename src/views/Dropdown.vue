@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import Flowbite from "flowbite";
-import type Dropdown from "flowbite/src/components/dropdown";
+import { Dropdown } from "flowbite-ts-test";
 import { onMounted, ref } from "vue";
 
 let dropdown: Dropdown | null;
@@ -9,7 +8,7 @@ const dropdownMenu = ref(null);
 const dropdownButton = ref(null);
 
 onMounted(() => {
-  dropdown = new Flowbite.Dropdown(dropdownMenu.value, dropdownButton.value);
+  dropdown = new Dropdown(dropdownMenu.value, dropdownButton.value);
 });
 </script>
 
